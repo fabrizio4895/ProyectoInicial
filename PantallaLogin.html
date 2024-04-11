@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,20 +9,19 @@
     <h1>Login Ulima</h1>
     <fieldset>
         <legend>Información Personal</legend>
-        <p>
-            <label for="nombre">Correo:</label> <input id="nombre" type="text" placeholder="colocar correo aquí">
-            <br> <br>
-            <label for="contraseña">Contraseña:</label> <input id="contraseña" type="password" placeholder="colocar contraseña aquí">
-        </p>
-
-        <select>
-            <option value="1" name="puesto">Profesor</option>
-            <option value="2" name="puesto">Alumno</option>
-        </select>
-
-        <input type="button" value="Ingresar">
-        
-    </fieldset>
+        <form action="./PantallaFormulario.html" method="get">
+            <p>
+                <label for="nombre">Correo:</label> <input required name="nombre" id="nombre" type="text" placeholder="colocar correo aquí">
+                <br> <br>
+                <label for="contraseña">Contraseña:</label> <input required name="contraseña" id="contraseña" type="password" placeholder="colocar contraseña aquí">
+            </p>
     
+            <input  type="radio" name="tipo"  id="profesor"> <label for="profesor">Profesor</label>
+            <input  type="radio" name="tipo"  id="alumno"> <label for="alumno">Alumno</label>
+            <br><br>
+    
+            <button type="submit">Ingresar</button>
+        </form>
+    </fieldset>
 </body>
 </html>
