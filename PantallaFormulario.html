@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Información:</legend>
+        <p>
+            <label >Nombre: 
+                <input type="text" name="Nombre">
+            </label>
+            <br><br>
+            <label >Apellido:
+                <input type="text" name="Apellido">
+            </label>
+            <br><br>
+            <label>Tipo:
+                <input type="text" name="Tipo" list="Tipo">
+                <datalist id="Tipo">
+                    <option value="Solicitud"></option>
+                    <option value="Reclamo"></option>
+                    
+                </datalist>
+            </label>
+            <br><br>
+            <label>Telefono:
+                <input type="tel">
+            </label>
+            <br><br>
+            <label>Ingrese el detalle (Max 50 caracteres):
+                <br>
+                <textarea name="detalle" placeholder="Ingrese Detalle" maxlength="50" cols="50" rows="5"></textarea>
+            </label>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </p>
+    </fieldset>
+</body>
+</html>
